@@ -17,7 +17,7 @@
 
   <body>
 
-    <div class="hamburger-wrapper hamburger-wrapper-main orange" onclick="toggleNavigationMenu(this)">
+    <div class="hamburger-wrapper hamburger-wrapper-main" onclick="toggleNavigationMenu(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -27,13 +27,35 @@
     <div>
       {{ content }}
     </div>
-
     
+    <div id="navigationOverlay" class="overlay navigation-overlay">
+      <div class="overlay-content overlay-content-left">
+        <div class="center-container">
+          <img class="overlay-image" src="{{ site.baseurl }}/images/COMPUTER.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="overlay-content overlay-content-right">
+        <img class="overlay-divider" src="{{ site.baseurl }}/images/DIVIDER.svg" alt="">
+        <ul class="navigation-menu">
+          <li class="navigation-item"><a href="{{ site.baseurl }}/">Home</a></li>
+          <li class="navigation-item"><a href="{{ site.baseurl }}/devs">Devs</a></li>
+          <li class="navigation-item"><a href="{{ site.baseurl }}/companies">Companies</a></li>
+          <li class="navigation-item"><a href="{{ site.baseurl }}/groups">Groups</a></li>
+          <li class="navigation-item"><a href="{{ site.baseurl }}/events">Events</a></li>
+          <li class="navigation-item"><a href="{{ site.baseurl }}/jobs">Jobs</a></li>
+          <li class="navigation-item"><a href="{{ site.baseurl }}/resources">Resources</a></li>
+        </ul>
+      </div>
+      
+    </div>
 
     {% include analytics.html %}
     <script>
       function toggleNavigationMenu(hamburger) {
-          hamburger.classList.toggle("is-open");
+          hamburger.classList.toggle('is-open');
+          var navigationOverlay = document.getElementById('navigationOverlay');
+          navigationOverlay.classList.toggle('is-open');
       }
     </script>
   </body>

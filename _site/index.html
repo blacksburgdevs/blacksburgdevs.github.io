@@ -28,7 +28,7 @@
 
   <body>
 
-    <div class="hamburger-wrapper hamburger-wrapper-main orange" onclick="toggleNavigationMenu(this)">
+    <div class="hamburger-wrapper hamburger-wrapper-main" onclick="toggleNavigationMenu(this)">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
@@ -36,32 +36,47 @@
     
 
     <div>
-      <!--
-<div class="posts">
-  
-    <article class="post">
+      <div class="full-image-cover full-image-cover-home">
+  <div style="text-align: center;">
+    <img style="width: 800px; margin-top: 50px;" src="/images/BLACKSBURG_DEVS_COMMUNITY.svg" alt="">
+  </div>
 
-      <h1><a href="/Hello-World/">You're up and running!</a></h1>
+  <!--<div class="something">
+    <img class="main-logo" src="/images/LOGO_WHITE.svg" alt="">
+  </div>-->
+</div>
 
-      <div class="entry">
-        <p>Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).</p>
-
-
-      </div>
-
-      <a href="/Hello-World/" class="read-more">Read More</a>
-    </article>
-  
-</div>-->
     </div>
-
     
+    <div id="navigationOverlay" class="overlay navigation-overlay">
+      <div class="overlay-content overlay-content-left">
+        <div class="center-container">
+          <img class="overlay-image" src="/images/COMPUTER.svg" alt="">
+        </div>
+      </div>
+      
+      <div class="overlay-content overlay-content-right">
+        <img class="overlay-divider" src="/images/DIVIDER.svg" alt="">
+        <ul class="navigation-menu">
+          <li class="navigation-item"><a href="/">Home</a></li>
+          <li class="navigation-item"><a href="/devs">Devs</a></li>
+          <li class="navigation-item"><a href="/companies">Companies</a></li>
+          <li class="navigation-item"><a href="/groups">Groups</a></li>
+          <li class="navigation-item"><a href="/events">Events</a></li>
+          <li class="navigation-item"><a href="/jobs">Jobs</a></li>
+          <li class="navigation-item"><a href="/resources">Resources</a></li>
+        </ul>
+      </div>
+      
+    </div>
 
     
 
     <script>
       function toggleNavigationMenu(hamburger) {
-          hamburger.classList.toggle("is-open");
+          hamburger.classList.toggle('is-open');
+          var navigationOverlay = document.getElementById('navigationOverlay');
+          navigationOverlay.classList.toggle('is-open');
       }
     </script>
   </body>

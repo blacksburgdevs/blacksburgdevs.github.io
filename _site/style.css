@@ -1,6 +1,7 @@
 /***************/
 /* MEYER RESET */
 /***************/
+@import url("https://fonts.googleapis.com/css?family=Bowlby+One+SC|Ubuntu");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +57,23 @@ table {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1 {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 4em;
+}
+
 .hamburger-wrapper {
   cursor: pointer;
   display: inline-block;
@@ -73,6 +91,91 @@ table {
   transition: 0.4s;
 }
 
+.full-image-cover {
+  background-size: cover;
+  height: 100vh;
+}
+.full-image-cover .main-logo {
+  margin-top: 100px;
+}
+
+.full-image-cover-home {
+  background-image: url("images/BLACKSBURG.jpg");
+}
+
+.main-logo {
+  width: 350px;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+}
+
+.navigation-item {
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 4.5em;
+  margin: 15px 0 15px 0;
+  text-transform: uppercase;
+}
+
+.overlay {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.overlay-image {
+  width: 450px;
+}
+
+.overlay-divider {
+  height: 90vh;
+  margin-left: 10px;
+  margin-right: 50px;
+}
+
+.overlay-content {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.overlay-content-right {
+  float: right;
+  width: 50%;
+}
+
+.overlay-content-left {
+  float: left;
+  width: 50%;
+}
+
+.center-container {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.something {
+  display: flex;
+  justify-content: center;
+}
+
 .hamburger-wrapper.is-open .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
@@ -84,7 +187,47 @@ table {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
+.hamburger-wrapper.is-open .bar1, .hamburger-wrapper.is-open .bar2, .hamburger-wrapper.is-open .bar3 {
+  background-color: white;
+}
 
+.overlay.is-open {
+  display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .hamburger-wrapper .bar1, .hamburger-wrapper .bar2, .hamburger-wrapper .bar3 {
   background-color: #333;
+}
+
+a {
+  color: white;
+}
+a:hover {
+  color: #e7473d;
+}
+
+.overlay {
+  background-color: #333;
+}
+
+.hamburger-wrapper {
+  z-index: 100;
 }
