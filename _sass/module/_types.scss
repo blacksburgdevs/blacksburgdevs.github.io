@@ -1,0 +1,14 @@
+mark.red {
+  background: none;
+  color: $accentColor;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.huge {
+  color: $accentColor;
+  font-size: 10em;
+  text-transform: uppercase;
+}

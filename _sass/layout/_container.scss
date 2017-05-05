@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+}
+
+.container-item {
+  flex: 1;
+}
+
+.container-centered {
+  align-items: center;
+  justify-content: center;   
+  width: 100%;
+}
+
+.container-centered-vertically {
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center; 
+  width: 100%;
+}
+
+.container-space-around {
+  justify-content: space-around;
+}
