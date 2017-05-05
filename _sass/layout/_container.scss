@@ -6,10 +6,19 @@
   flex: 1;
 }
 
+.container-condensed {
+  width: 70%;
+}
+
 .container-centered {
   align-items: center;
   justify-content: center;   
   width: 100%;
+}
+
+.container-vertical {
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-centered-vertically {

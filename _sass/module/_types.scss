@@ -8,7 +8,15 @@ mark.red {
 }
 
 .huge {
-  color: $accentColor;
-  font-size: 10em;
-  text-transform: uppercase;
+  color: white;
+  font-size: 9em;
+  &.accent {
+    color: $accentColor;
+  }
+}
+
+.info-text {
+  color: #333;
+  font-size: 3em;
+  font-weight: bold;
 }
