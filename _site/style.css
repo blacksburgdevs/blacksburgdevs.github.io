@@ -152,6 +152,7 @@ footer {
 }
 
 .full-image-cover {
+  background-attachment: fixed;
   background-size: cover;
   height: 100vh;
 }
@@ -161,6 +162,11 @@ footer {
 
 .full-image-cover-home {
   background-image: url("images/BLACKSBURG.jpg");
+}
+
+.full-image-cover-sub {
+  background-image: url("images/Qualtrax.jpg");
+  height: 40vh;
 }
 
 .main-logo {
@@ -241,7 +247,7 @@ mark.red {
 
 .info-text {
   color: #333;
-  font-size: 3em;
+  font-size: 2.8em;
   font-weight: bold;
 }
 
