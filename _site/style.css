@@ -92,6 +92,7 @@ p {
 
 .container {
   display: flex;
+  padding-top: 50px;
 }
 
 .container-item {
@@ -115,7 +116,6 @@ p {
 
 .container-centered-vertically {
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -156,9 +156,6 @@ footer {
   background-size: cover;
   height: 100vh;
 }
-.full-image-cover .main-logo {
-  margin-top: 100px;
-}
 
 .full-image-cover-home {
   background-image: url("images/BLACKSBURG.jpg");
@@ -166,11 +163,11 @@ footer {
 
 .full-image-cover-sub {
   background-image: url("images/Qualtrax.jpg");
-  height: 40vh;
+  height: 60vh;
 }
 
 .main-logo {
-  width: 200px;
+  width: 400px;
 }
 
 .navigation-menu {
@@ -247,7 +244,7 @@ mark.red {
 
 .info-text {
   color: #333;
-  font-size: 2.8em;
+  font-size: 2.3em;
   font-weight: bold;
 }
 
