@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>Blacksburg Devs</title>
 
     {% include meta.html %}
 
@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
@@ -22,19 +20,18 @@
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-    
 
     <div>
       {{ content }}
     </div>
-    
+
     <div id="navigationOverlay" class="overlay navigation-overlay">
       <div class="overlay-content overlay-content-left">
         <div class="container container-centered-vertically">
           <img class="overlay-image" src="{{ site.baseurl }}/images/COMPUTER.svg" alt="">
         </div>
       </div>
-      
+
       <div class="overlay-content overlay-content-right">
         <img class="overlay-divider" src="{{ site.baseurl }}/images/DIVIDER.svg" alt="">
         <ul class="navigation-menu">
@@ -47,10 +44,10 @@
           <li class="navigation-item"><a href="{{ site.baseurl }}/resources">Resources</a></li>
         </ul>
       </div>
-      
+
     </div>
     <footer>
-      
+
     </footer>
     {% include analytics.html %}
     <script>

@@ -1,5 +1,55 @@
 ---
 layout: default
+title: Devs
 ---
+<div class="container">
+	<h1 class="huge accent uppercase">Devs</h1>
+</div>
 
-<h1>DEVS</h1>
+<ul class="container">
+{% for org_hash in site.data.devs %}
+{% assign dev = org_hash[1] %}
+  <li>
+		<div class="card">
+			<div class="card-back">
+				<div class="container container-vertical">
+					<div class="">
+						{{ dev.firstname }} {{ dev.lastname }}
+					</div>
+					<div style="align-self: flex-start">
+						{{ dev.company }}
+					</div>
+					<div style="align-self: flex-start">
+						{{ dev.github }}
+					</div>
+					<div style="align-self: flex-start">
+						{{ dev.twitter }}
+					</div>
+					<div style="align-self: flex-start">
+						{{ dev.site }}
+					</div>
+				</div>
+			</div>
+			<div class="card-image">
+				<img src="https://secure.gravatar.com/avatar/{{ dev.gravatarid }}?s=310s" alt="">
+				<div class="card-image-overlay">
+
+				</div>
+			</div>
+			<div class="card-details">
+				<div class="card-name">
+					<div class="card-first-name">
+						{{ dev.firstname }}
+					</div>
+					<div class="card-last-name">
+						{{ dev.lastname }}
+					</div>
+				</div>
+				<div class="card-dev-title">
+					{{ dev.position }}
+				</div>
+			</div>
+		</div>
+  </li>
+{% endfor %}
+</ul>

@@ -66,6 +66,8 @@ html {
 }
 
 body {
+  background-color: #333;
+  color: white;
   font-family: 'Ubuntu', sans-serif;
 }
 
@@ -92,7 +94,7 @@ p {
 
 .container {
   display: flex;
-  padding-top: 50px;
+  padding: 50px 30px 50px 30px;
 }
 
 .container-item {
@@ -116,6 +118,7 @@ p {
 
 .container-centered-vertically {
   align-items: center;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -132,6 +135,90 @@ footer {
 
 .banner {
   padding: 40px;
+}
+
+.card {
+  background-color: white;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Bowlby One SC', cursive;
+  justify-content: flex-end;
+  height: 415px;
+  padding: 20px 20px 10px 20px;
+  position: relative;
+  text-transform: uppercase;
+  width: 360px;
+}
+
+.card-back {
+  background-color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+  z-index: 1;
+}
+.card-back:hover {
+  opacity: 1;
+}
+
+.card-image {
+  align-self: center;
+  background-color: #e7473d;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card-image-overlay {
+  background: rgba(222, 48, 47, 0.5);
+  border-radius: 5px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.card-name {
+  align-content: flex-end;
+  align-items: center;
+  align-self: flex-start;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.card-first-name {
+  font-size: 1.3em;
+}
+
+.card-last-name {
+  color: #e7473d;
+  font-size: 2em;
+}
+
+.card-dev-title {
+  align-self: flex-end;
+  font-size: .9em;
+  text-align: right;
+  width: 100px;
 }
 
 .hamburger-wrapper {
@@ -167,7 +254,12 @@ footer {
 }
 
 .main-logo {
+  margin-top: 100px;
   width: 400px;
+}
+
+.main-header-image {
+  width: 800px;
 }
 
 .navigation-menu {
@@ -308,8 +400,15 @@ mark.red {
   background-color: #e7473d;
 }
 
+.white-bg {
+  background-color: white;
+}
+.white-bg h1 {
+  color: #333;
+}
+
 .hamburger-wrapper .bar1, .hamburger-wrapper .bar2, .hamburger-wrapper .bar3 {
-  background-color: #333;
+  background-color: white;
 }
 
 a {
