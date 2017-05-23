@@ -62,7 +62,7 @@ a {
 }
 
 html {
-  font-size: 100%;
+  font-size: 62.5%;
 }
 
 body {
@@ -73,28 +73,28 @@ body {
 
 h1 {
   font-family: 'Bowlby One SC', cursive;
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 h2 {
   font-family: 'Bowlby One SC', cursive;
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 h3 {
   color: #333;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: bold;
 }
 
 h4 {
   color: #333;
-  font-size: 1.6em;
+  font-size: 1.6rem;
 }
 
 p {
   color: white;
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -104,10 +104,6 @@ p {
 
 .container-item {
   flex: 1;
-}
-
-.container-condensed {
-  width: 70%;
 }
 
 .container-centered {
@@ -123,7 +119,6 @@ p {
 
 .container-centered-vertically {
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   justify-content: center;
   width: 100%;
@@ -138,6 +133,111 @@ p {
   justify-content: space-between;
 }
 
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-m-1 {
+    width: 8.33%;
+  }
+
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  .col-m-6 {
+    width: 50%;
+  }
+
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  .col-m-9 {
+    width: 75%;
+  }
+
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
 footer {
   background-color: #333;
   height: 150px;
@@ -195,7 +295,7 @@ footer {
 }
 .card-image img {
   border-radius: 5px;
-  filter: grayscale(100%) contrast(200%);
+  filter: contrast(200%);
   width: 310px;
 }
 
@@ -288,11 +388,6 @@ footer {
 
 .main-logo {
   margin-top: 100px;
-  width: 400px;
-}
-
-.main-header-image {
-  width: 800px;
 }
 
 .navigation-menu {
@@ -353,6 +448,7 @@ footer {
 mark.red {
   background: none;
   color: #e7473d;
+  display: block;
 }
 
 .uppercase {
@@ -361,7 +457,7 @@ mark.red {
 
 .huge {
   color: white;
-  font-size: 9em;
+  font-size: 5rem;
 }
 .huge.accent {
   color: #e7473d;
@@ -369,7 +465,7 @@ mark.red {
 
 .info-text {
   color: #333;
-  font-size: 2.3em;
+  font-size: 2.3rem;
   font-weight: bold;
 }
 

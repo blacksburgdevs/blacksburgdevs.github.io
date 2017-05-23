@@ -1,6 +1,7 @@
 mark.red {
   background: none;
   color: $accentColor;
+	display: block;
 }
 
 .uppercase {
@@ -9,7 +10,7 @@ mark.red {
 
 .huge {
   color: white;
-  font-size: 9em;
+  font-size: 5rem;
   &.accent {
     color: $accentColor;
   }
@@ -17,6 +18,6 @@ mark.red {
 
 .info-text {
   color: #333;
-  font-size: 2.3em;
+  font-size: 2.3rem;
   font-weight: bold;
 }

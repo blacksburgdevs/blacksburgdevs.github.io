@@ -7,10 +7,6 @@
   flex: 1;
 }
 
-.container-condensed {
-  width: 70%;
-}
-
 .container-centered {
   align-items: center;
   justify-content: center;
@@ -24,7 +20,7 @@
 
 .container-centered-vertically {
   align-items: center;
-  height: 100vh;
+  // height: 100vh;
   flex-direction: column;
   justify-content: center;
   width: 100%;
