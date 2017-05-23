@@ -373,6 +373,7 @@ footer {
 
 .full-image-cover {
   background-attachment: fixed;
+  background-position: center bottom;
   background-size: cover;
   height: 100vh;
 }
@@ -382,7 +383,9 @@ footer {
 }
 
 .full-image-cover-sub {
+  background-attachment: fixed;
   background-image: url("images/Qualtrax.jpg");
+  background-position: center top;
   height: 60vh;
 }
 
@@ -449,6 +452,7 @@ mark.red {
   background: none;
   color: #e7473d;
   display: block;
+  font-size: 6rem;
 }
 
 .uppercase {
